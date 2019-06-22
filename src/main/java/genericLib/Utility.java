@@ -77,6 +77,26 @@ public class Utility {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+	public static void writeToXL(String path, String name,int r, int c){
+		try {
+			Workbook w= WorkbookFactory.create(new FileInputStream(path));
+			w.getSheet("Sheet1").getRow(r).getCell(c).setCellValue(name);
+			w.write(new FileOutputStream(path));
+			w.close();
+		} catch (Exception e) {
+			System.out.println("------------writeToXL FAIL------------");
+		}
+	
+	}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	
 	public static WebDriver openBrowser(String ip, String browser) {
 		WebDriver driver;  
 		if(ip.equals("localhost")) {
@@ -107,7 +127,7 @@ public class Utility {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	public static String getScreenshot(WebDriver driver, String folder) {
-		Date d =new Date(0);
+		Date d =new Date();
 		String dateTime=d.toString().replaceAll(":", "_");
 		String path=folder+"/"+dateTime+".png";
 		Reporter.log(path,true);
