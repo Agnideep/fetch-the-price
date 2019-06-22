@@ -24,5 +24,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="jars/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="lib" path="result/testResult.xlsx"/>
+	<classpathentry kind="lib" path="input/config.properties"/>
+	<classpathentry kind="lib" path="input/dataInput.xlsx"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
