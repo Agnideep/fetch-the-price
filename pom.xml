@@ -8,6 +8,7 @@
   <packaging>jar</packaging>
   
   
+  
 
   <name>fetch-the-price</name>
   <url>http://maven.apache.org</url>
