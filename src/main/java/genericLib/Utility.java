@@ -7,7 +7,6 @@ import java.net.URL;
 import java.util.Date;
 import java.util.Properties;
 
-
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.OutputType;
@@ -47,10 +46,10 @@ public class Utility {
 	public static String getXLdata(String path, String sheet, int row, int cel) {
 		String v="";
 		try {
-			Workbook w =WorkbookFactory.create(new FileInputStream(path));
-			v=w.getSheet(sheet).getRow(row).getCell(cel).toString();
+			Workbook w=WorkbookFactory.create(new FileInputStream(path));
+			v=w.getSheet(sheet).getRow(row).getCell(cel).getStringCellValue().toString();
 		} catch (Exception e) {
-			System.out.println("------------getXLdATA FAIL------------");
+			Reporter.log("------------getXLdATA FAIL------------",true);
 		}
 		
 		return v;

@@ -22,6 +22,9 @@ public class FlipCartOpeningPage extends BaseTest {
 	@FindBy(xpath="//button[@class='vh79eN']")
 	private WebElement searchButton;
 	
+	@FindBy(xpath="//button[@class='_2AkmmA _29YdH8']")
+	private WebElement popupCloseBtn;
+	
 	
 	public void enterSearchValue(String keyword) {
 		
@@ -30,5 +33,9 @@ public class FlipCartOpeningPage extends BaseTest {
 	
 	public void clickSearch() {
 		searchButton.click();
+	}
+	
+	public void closePopup() {
+		popupCloseBtn.click();
 	}
 }

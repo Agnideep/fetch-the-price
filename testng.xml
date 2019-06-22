@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest">
+        <methods>
+          <include name="FetchNameAndPriceforIphone"/>
+          <include name="closeAPP"/>
+          <include name="openAPP"/>
+        </methods>
+      </class> 
+    </classes>
+  </test> 
+</suite> 

@@ -20,20 +20,21 @@ public class FetchNameAndPriceTest extends BaseTest {
 	  Reporter.log("---------Navigated to Flipcart.com HomePage------------", true);
 	  
 	  FlipCartOpeningPage fp= new FlipCartOpeningPage(driver);
-	  fp.enterSearchValue(genericLib.Utility.getXLdata(DATA_PATH, "Sheet1", 1, 0));
+	  
+	  Reporter.log("---------Closing popup------------", true);
+	  fp.closePopup();
+	  
+	  String searchkey=genericLib.Utility.getXLdata(DATA_PATH,"data",1, 0);
+	  Reporter.log("---------Entering input data :"+ searchkey + " into editbox------------", true);
+	  fp.enterSearchValue("iPhone");
+	  
+	  Reporter.log("---------Clicking search------------", true);
 	  fp.clickSearch();
 	  
 	  
 	  Reporter.log("---------Redirecting to Results of the search--------------", true);
 	  
-	  /*
-	  List<WebElement> phones= driver.findElements(By.xpath("//div[@class='_3wU53n']"));
-	  Iterator<WebElement> ph= phones.iterator();
-	  
-	  List<WebElement> prices=driver.findElements(By.xpath("//div[@class='_1vC4OE _2rQ-NK']"));
-	  Iterator<WebElement> pr= prices.iterator();
-	  
-	  */
+	
 	  
 	  SearchResultPage srp= new SearchResultPage(driver);
 	  

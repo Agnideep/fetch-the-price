@@ -6,10 +6,10 @@ public interface IAutoConstants {
 	String GECKO_KEY="webdriver.gecko.driver";
 	String GECKO_VALUE="./driver/geckodriver.exe";
 	String RES_PATH="./result/testResult.xlsx";
-	String CONFIG_PATH="./input/config.properties";
+	String CONFIG_PATH="./input/configuration.properties";
 	String FAIL_PHOTO_PATH="./screenshot/fail";
 	String SKIP_PHOTO_PATH="./screenshot/skip";
-	String DATA_PATH="./dataInput.xlsx";
+	String DATA_PATH="./input/dataInput.xlsx";
 	
 }
 
