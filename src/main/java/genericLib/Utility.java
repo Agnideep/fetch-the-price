@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -54,37 +55,29 @@ public class Utility {
 		
 		return v;
 	}
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 	
-	public static void writeToXL(String path, int passCount, int failCount , int skipCount){
-		try {
-			Workbook w= WorkbookFactory.create(new FileInputStream(path));
-			w.getSheet("Sheet1").getRow(1).getCell(0).setCellValue(passCount);
-			w.getSheet("Sheet1").getRow(1).getCell(1).setCellValue(failCount);
-			w.getSheet("Sheet1").getRow(1).getCell(2).setCellValue(skipCount);
-			w.write(new FileOutputStream(path));
-			w.close();
-		} catch (Exception e) {
-				System.out.println("------------writeToXL FAIL------------");
-		}
-	
-		}
-	
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	
-	public static void writeToXL(String path, String name,int r, int c){
+	public static void writeToXL(String path, String name,String sheet,int r, int c){
 		try {
-			Workbook w= WorkbookFactory.create(new FileInputStream(path));
-			w.getSheet("Sheet1").getRow(r).getCell(c).setCellValue(name);
+			/*
+			Workbook w= WorkbookFactory.create(new FileInputStream(new File(path)));
+			w.getSheet(sheet).getRow(r).getCell(c).setCellValue(name);
 			w.write(new FileOutputStream(path));
-			w.close();
+			w.close();*/
+			
+			File file= new File(path);
+			FileInputStream inputStream = new FileInputStream(file);
+			Workbook wb = new XSSFWorkbook(inputStream);
+			wb.getSheet(sheet).getRow(r).getCell(c).setCellValue(name);
+			wb.write(new FileOutputStream(path));
+			wb.close();
+			
+			
+
 		} catch (Exception e) {
 			System.out.println("------------writeToXL FAIL------------");
 		}

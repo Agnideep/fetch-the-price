@@ -1,7 +1,6 @@
 package genericLib;
 
-import java.util.Iterator;
-import java.util.List;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

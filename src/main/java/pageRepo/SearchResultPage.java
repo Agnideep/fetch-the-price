@@ -22,23 +22,29 @@ private WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	 
+	 //Identified in testclass by findElements
+	 
 	 @FindBy(xpath=("//div[@class='_3wU53n']"))
 	 private List<WebElement> phoneName;
 	 
 	 @FindBy(xpath="//div[@class='_1vC4OE _2rQ-NK']")
 	 private List<WebElement> phonePrice;
 	 
-	 
+	 /*
+	  * Unused methods
+	  */
 	 
 	 public void setPhoneList() {
 		 
 	try {	 
-		Iterator<WebElement> name=phoneName.iterator();
-		int i=0;
-		while(i<phoneName.size()) {
-			WebElement ph=name.next();
-			String phName=ph.getText().toString();
-			Utility.writeToXL(IAutoConstants.RES_PATH, phName, i+1, 0);
+		//Iterator<WebElement> name=phoneName.iterator();
+		
+		for(int i=0;i<=phoneName.size();i++) {
+			
+			//WebElement ph=name.next();
+			//String phName=ph.getText().toString();
+			String phName=phoneName.get(i).getText().toString();
+			Utility.writeToXL(IAutoConstants.RES_PATH, phName, "Sheet1", i+1, 0);
 			}
 		}catch(Exception e) {
 			Reporter.log("-------ERROR in setting list of Phones to excel----",true);
@@ -47,12 +53,13 @@ private WebDriver driver;
 	 
 	 public void setPriceList() {
 		try {
-		 	Iterator<WebElement> cost=phonePrice.iterator();
-			int i=0;
-			while(i<phonePrice.size()) {
-				WebElement pr=cost.next();
-				String phPrice=pr.getText().toString();
-				Utility.writeToXL(IAutoConstants.RES_PATH, phPrice, i+1, 1);
+		 	//Iterator<WebElement> cost=phonePrice.iterator();
+			
+			for(int i=0;i<=phonePrice.size();i++) {
+				//WebElement pr=cost.next();
+				//String phPrice=pr.getText().toString();
+				String phPrice=phonePrice.get(i).toString();
+				Utility.writeToXL(IAutoConstants.RES_PATH, phPrice, "Sheet1", i+1, 1);
 			}
 		 }catch(Exception e) {
 				Reporter.log("-------ERROR in setting list of Prices to excel----",true);

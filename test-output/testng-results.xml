@@ -2,16 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
+      <![CDATA[---------Starting Test---------]]>
+    </line>
+    <line>
+      <![CDATA[=====starting execution======FetchNameAndPriceforIphone]]>
+    </line>
+    <line>
       <![CDATA[---------Navigated to Flipcart.com HomePage------------]]>
     </line>
     <line>
       <![CDATA[---------Closing popup------------]]>
     </line>
     <line>
-      <![CDATA[------------getXLdATA FAIL------------]]>
-    </line>
-    <line>
-      <![CDATA[---------Entering input data : into editbox------------]]>
+      <![CDATA[---------Entering input data :IPHONE into editbox------------]]>
     </line>
     <line>
       <![CDATA[---------Clicking search------------]]>
@@ -20,10 +23,157 @@
       <![CDATA[---------Redirecting to Results of the search--------------]]>
     </line>
     <line>
-      <![CDATA[---------Object of SearchPage created-------------]]>
+      <![CDATA[----No.of Phones---:24]]>
+    </line>
+    <line>
+      <![CDATA[---- pricelist------:24]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone X (Silver, 64 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone X (Space Gray, 64 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s (Rose Gold, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR (Black, 128 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s (Silver, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Rose Gold, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR ((PRODUCT)RED, 64 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s (Space Grey, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s (Gold, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR (Black, 64 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Silver, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Space Grey, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR (Coral, 128 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Gold, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR (Blue, 64 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR (White, 128 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR (White, 64 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6 (Space Grey, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR (Blue, 128 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Silver, 16 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 7 (Rose Gold, 128 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 7 (Silver, 128 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone 7 (Silver, 32 GB)]]>
+    </line>
+    <line>
+      <![CDATA[----Phone name fetched-----: Apple iPhone XR (Yellow, 256 GB)]]>
     </line>
     <line>
       <![CDATA[-------ERROR in setting list of Phones to excel----]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+    </line>
+    <line>
+      <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
     </line>
     <line>
       <![CDATA[-------ERROR in setting list of Prices to excel----]]>
@@ -32,18 +182,21 @@
       <![CDATA[---------Search results Set to Excelsheet--------------]]>
     </line>
     <line>
-      <![CDATA[---------Exiting Browser--------------]]>
+      <![CDATA[---------Ending test-------------]]>
+    </line>
+    <line>
+      <![CDATA[Test :FetchNameAndPriceforIphone is PASSSED]]>
     </line>
     <line>
       <![CDATA[Testname : FetchNameAndPriceforIphoneStatus :PASS1]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17809" started-at="2019-06-22T14:03:08Z" finished-at="2019-06-22T14:03:26Z">
+  <suite name="Default suite" duration-ms="72487" started-at="2019-06-22T17:51:35Z" finished-at="2019-06-22T17:52:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17809" started-at="2019-06-22T14:03:08Z" finished-at="2019-06-22T14:03:26Z">
+    <test name="Default test" duration-ms="72487" started-at="2019-06-22T17:51:35Z" finished-at="2019-06-22T17:52:47Z">
       <class name="com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest">
-        <test-method status="PASS" signature="openAPP(java.lang.String, java.lang.String)[pri:0, instance:com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest@6767c1fc]" name="openAPP" is-config="true" duration-ms="12103" started-at="2019-06-22T19:33:08Z" finished-at="2019-06-22T19:33:20Z">
+        <test-method status="PASS" signature="openAPP(java.lang.String, java.lang.String)[pri:0, instance:com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest@5622fdf]" name="openAPP" is-config="true" duration-ms="39407" started-at="2019-06-22T23:21:35Z" finished-at="2019-06-22T23:22:14Z">
           <params>
             <param index="0">
               <value>
@@ -59,8 +212,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAPP -->
-        <test-method status="PASS" signature="FetchNameAndPriceforIphone()[pri:0, instance:com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest@6767c1fc]" name="FetchNameAndPriceforIphone" duration-ms="5641" started-at="2019-06-22T19:33:20Z" finished-at="2019-06-22T19:33:26Z">
+        <test-method status="PASS" signature="FetchNameAndPriceforIphone()[pri:0, instance:com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest@5622fdf]" name="FetchNameAndPriceforIphone" duration-ms="32034" started-at="2019-06-22T23:22:14Z" finished-at="2019-06-22T23:22:46Z">
           <reporter-output>
+            <line>
+              <![CDATA[=====starting execution======FetchNameAndPriceforIphone]]>
+            </line>
             <line>
               <![CDATA[---------Navigated to Flipcart.com HomePage------------]]>
             </line>
@@ -68,10 +224,7 @@
               <![CDATA[---------Closing popup------------]]>
             </line>
             <line>
-              <![CDATA[------------getXLdATA FAIL------------]]>
-            </line>
-            <line>
-              <![CDATA[---------Entering input data : into editbox------------]]>
+              <![CDATA[---------Entering input data :IPHONE into editbox------------]]>
             </line>
             <line>
               <![CDATA[---------Clicking search------------]]>
@@ -80,10 +233,157 @@
               <![CDATA[---------Redirecting to Results of the search--------------]]>
             </line>
             <line>
-              <![CDATA[---------Object of SearchPage created-------------]]>
+              <![CDATA[----No.of Phones---:24]]>
+            </line>
+            <line>
+              <![CDATA[---- pricelist------:24]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone X (Silver, 64 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone X (Space Gray, 64 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s (Rose Gold, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR (Black, 128 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s (Silver, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Rose Gold, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR ((PRODUCT)RED, 64 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s (Space Grey, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s (Gold, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR (Black, 64 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Silver, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Space Grey, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR (Coral, 128 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Gold, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR (Blue, 64 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR (White, 128 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR (White, 64 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6 (Space Grey, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR (Blue, 128 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 6s Plus (Silver, 16 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 7 (Rose Gold, 128 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 7 (Silver, 128 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone 7 (Silver, 32 GB)]]>
+            </line>
+            <line>
+              <![CDATA[----Phone name fetched-----: Apple iPhone XR (Yellow, 256 GB)]]>
             </line>
             <line>
               <![CDATA[-------ERROR in setting list of Phones to excel----]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
+            </line>
+            <line>
+              <![CDATA[----Phone price fetched-----: [[ChromeDriver: chrome on XP (76f6c00741495541763e2fac4bf6cee6)] -> xpath: //div[@class='_1vC4OE _2rQ-NK']]]]>
             </line>
             <line>
               <![CDATA[-------ERROR in setting list of Prices to excel----]]>
@@ -92,15 +392,18 @@
               <![CDATA[---------Search results Set to Excelsheet--------------]]>
             </line>
             <line>
-              <![CDATA[---------Exiting Browser--------------]]>
+              <![CDATA[---------Ending test-------------]]>
+            </line>
+            <line>
+              <![CDATA[Test :FetchNameAndPriceforIphone is PASSSED]]>
             </line>
           </reporter-output>
         </test-method> <!-- FetchNameAndPriceforIphone -->
-        <test-method status="PASS" signature="closeAPP(org.testng.ITestResult)[pri:0, instance:com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest@6767c1fc]" name="closeAPP" is-config="true" duration-ms="0" started-at="2019-06-22T19:33:26Z" finished-at="2019-06-22T19:33:26Z">
+        <test-method status="PASS" signature="closeAPP(org.testng.ITestResult)[pri:0, instance:com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest@5622fdf]" name="closeAPP" is-config="true" duration-ms="967" started-at="2019-06-22T23:22:46Z" finished-at="2019-06-22T23:22:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FetchNameAndPriceforIphone status=SUCCESS method=FetchNameAndPriceTest.FetchNameAndPriceforIphone()[pri:0, instance:com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest@6767c1fc] output=---------Navigated to Flipcart.com HomePage------------]]]>
+                <![CDATA[[TestResult name=FetchNameAndPriceforIphone status=SUCCESS method=FetchNameAndPriceTest.FetchNameAndPriceforIphone()[pri:0, instance:com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest@5622fdf] output======starting execution======FetchNameAndPriceforIphone]]]>
               </value>
             </param>
           </params>

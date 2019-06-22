@@ -61,7 +61,7 @@ public class Result implements ITestListener , IAutoConstants{
 		
 	}
 
-	@SuppressWarnings("unchecked")
+	
 	@Override
 	public void onStart(ITestContext context) {
 		Reporter.log("---------Starting Test---------",true);
@@ -72,10 +72,7 @@ public class Result implements ITestListener , IAutoConstants{
 	@Override
 	public void onFinish(ITestContext context) {
 		
-		Reporter.log("PASSCOUNT :"+ passCount, true);
-		Reporter.log("FAILCOUNT :"+ failCount, true);
-		Reporter.log("SKIPCOUNT :"+ skipCount, true);
-		Utility.writeToXL(RES_PATH, passCount, failCount, skipCount);
+		
 		
 	}
 
