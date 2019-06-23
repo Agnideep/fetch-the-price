@@ -1,5 +1,10 @@
 package genericLib;
 
+/*
+ * Interface containing all the constants containing the paths of executables
+ * and folders 
+ */
+
 public interface IAutoConstants {
 	String CHROME_KEY="webdriver.chrome.driver";
 	String CHROME_VALUE="./driver/chromedriver.exe";

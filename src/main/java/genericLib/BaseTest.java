@@ -12,18 +12,32 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+/*
+ * BaseTest class which is extended by all other classes 
+ * Sets the property of driver executables
+ * Sets the url,timeouts variables from the property file
+ * Implements testng annotations to open applications,close application and take screenshot using generic methods
+ * Listener class is implemented with the Basetest class
+ * 
+ */
+
+
 @Listeners(Result.class)	
 public  class BaseTest implements IAutoConstants {
 
 
 public WebDriver driver;
 	
+	/*
+	 * Static block sets the path of the driver executables	
+	 */
+
 	static {
-		
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
 		System.setProperty(GECKO_KEY, GECKO_VALUE);
-		
 	}
+	
+	
 	
 	public String URL=Utility.getPropertyValue(CONFIG_PATH, "url");
 	public String ITO=Utility.getPropertyValue(CONFIG_PATH, "ito");
@@ -32,6 +46,12 @@ public WebDriver driver;
 	
 	public String ETO=Utility.getPropertyValue(CONFIG_PATH, "eto");
 	public long lngETO=Long.parseLong(ETO);
+	
+	
+	/*
+	 *Parameters annotation used to pass ip, browser values from testng.xml file 
+	 *Before method executes before every @test method
+	 */
 	
 	@Parameters({"ip","browser"})
 	@BeforeMethod(alwaysRun=true)
@@ -44,6 +64,10 @@ public WebDriver driver;
 		driver.get(URL);
 		
 	}
+	
+	/*
+	 * Aftermethod exectues after every @test method
+	 */
 	
 	@AfterMethod(alwaysRun=true)
 	public void closeAPP(ITestResult result) {

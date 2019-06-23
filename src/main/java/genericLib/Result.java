@@ -7,13 +7,8 @@ import org.testng.Reporter;
 
 public class Result implements ITestListener , IAutoConstants{
 	
-	
-	
-
 	static int passCount=0, failCount=0, skipCount=0;
-	
-	
-	
+
 	@Override
 	public void onTestStart(ITestResult result) {
 		
@@ -29,10 +24,6 @@ public class Result implements ITestListener , IAutoConstants{
 		Reporter.log("Test :"+ name +" is PASSSED", true);
 		passCount++;
 		
-		
-		
-
-		
 	}
 
 	@Override
@@ -40,8 +31,6 @@ public class Result implements ITestListener , IAutoConstants{
 		String name = result.getName();
 		Reporter.log("Test :"+name +"is FAIL ", true);
 		failCount++;
-		
-		
 		
 	}
 
@@ -72,7 +61,7 @@ public class Result implements ITestListener , IAutoConstants{
 	@Override
 	public void onFinish(ITestContext context) {
 		
-		
+		Reporter.log("--------Test extecution finished--------",true);
 		
 	}
 
