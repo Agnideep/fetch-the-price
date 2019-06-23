@@ -23,7 +23,7 @@ import org.testng.annotations.Parameters;
 
 
 @Listeners(Result.class)	
-public  class BaseTest implements IAutoConstants {
+public  abstract class BaseTest implements IAutoConstants {
 
 
 public WebDriver driver;

@@ -47,17 +47,17 @@ public class FetchNameAndPriceTest extends BaseTest {
 	  
 	  List<WebElement> phoneName =driver.findElements(By.xpath("//div[@class='_3wU53n']"));
 	  int actPhCount=phoneName.size();
-	  Reporter.log("----No.of Phones---:"+actPhCount, true);
+	  
+	  Reporter.log("--------No.of Phones--------:"+actPhCount, true);
+	  
 	  Iterator<WebElement> itr1=phoneName.iterator();
+	  
 	  while(itr1.hasNext()) {
 		  int flagone=0;
 		  for(int i=1;i<=actPhCount;i++) {
 		  String pname=itr1.next().getText();
 		  Reporter.log(pname,true); 
-		  
-		  
-		  
-		  
+		   
 		  Utility.setXLData(RES_PATH, pname, "Sheet1", i, 0);
 		  flagone++;
 		  }
@@ -69,8 +69,10 @@ public class FetchNameAndPriceTest extends BaseTest {
 	  
 	  List<WebElement> phonePrice =driver.findElements(By.xpath("//div[@class='_1vC4OE _2rQ-NK']"));
 	  int actPriceCount=phoneName.size();
+	  
 	  Reporter.log("-----no.of prices- pricelist------:"+actPriceCount, true);
 	  Iterator<WebElement> itr2=phonePrice.iterator();
+	  
 	  while(itr2.hasNext()) {
 		  int flagtwo=0;
 		  

@@ -6,7 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import genericLib.BaseTest;
-
+	/*
+	 * POM class for Flipcart Homepage
+	 * declaration, initialization , utilization of webelements in page via public methods
+	 * 
+	 */
 public class FlipCartOpeningPage extends BaseTest {
 	
 	private WebDriver driver;
