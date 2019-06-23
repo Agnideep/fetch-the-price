@@ -8,13 +8,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import genericLib.BaseTest;
 import genericLib.IAutoConstants;
 import genericLib.Utility;
 import pageRepo.FlipCartOpeningPage;
 import pageRepo.SearchResultPage;
-
+  /*
+   * Test class to fetch product query data flipcart.com and set it in a excel sheet
+   * Author:Agnideep
+   */
 public class FetchNameAndPriceTest extends BaseTest {
   @Test
   public void FetchNameAndPriceforIphone() {
@@ -46,15 +50,19 @@ public class FetchNameAndPriceTest extends BaseTest {
 	  Reporter.log("----No.of Phones---:"+actPhCount, true);
 	  Iterator<WebElement> itr1=phoneName.iterator();
 	  while(itr1.hasNext()) {
-		  
+		  int flagone=0;
+		  for(int i=1;i<=actPhCount;i++) {
 		  String pname=itr1.next().getText();
 		  Reporter.log(pname,true); 
 		  
-		  for(int i=0;i<=actPhCount;i++) {
+		  
+		  
 		  
 		  Utility.setXLData(RES_PATH, pname, "Sheet1", i, 0);
-		  
+		  flagone++;
 		  }
+		  SoftAssert a=new SoftAssert();
+		  a.assertEquals(flagone, actPhCount);
 	  }
 	  
 	  
@@ -64,43 +72,22 @@ public class FetchNameAndPriceTest extends BaseTest {
 	  Reporter.log("-----no.of prices- pricelist------:"+actPriceCount, true);
 	  Iterator<WebElement> itr2=phonePrice.iterator();
 	  while(itr2.hasNext()) {
+		  int flagtwo=0;
 		  
+		  for(int j=1;j<=actPriceCount;j++) { 
 		  String pprice=itr2.next().getText();
 		  Reporter.log(pprice,true);
 		  
-		for(int j=0;j<=actPriceCount;j++) {  
+		 
 		  Utility.setXLData(RES_PATH, pprice, "Sheet1", j, 1);
+		  flagtwo++;
 		}
-		  
+		 SoftAssert b=new SoftAssert();
+		 b.assertEquals(flagtwo, actPriceCount);
 		  
 	  }
 	  
 	 
-	/*   
-	   try {	 
-		
-			for(int i=0;i<=phoneName.size();i++) {
-				String phName=phoneName.get(i).getText().toString();
-				Reporter.log("----Phone name fetched-----: "+phName, true);
-				Utility.writeToXL(IAutoConstants.RES_PATH, phName, "Sheet1", i, 0);
-				}
-			}catch(Exception e) {
-				Reporter.log("-------ERROR in setting list of Phones to excel----",true);
-			}
-		 
-  
-  	try {
-		for(int i=0;i<=phonePrice.size();i++) {
-			
-			String phPrice=phonePrice.get(i).toString();
-			Reporter.log("----Phone price fetched-----: "+phPrice, true);
-			Utility.writeToXL(IAutoConstants.RES_PATH, phPrice, "Sheet1", i, 1);
-		}
-	 }catch(Exception e) {
-			Reporter.log("-------ERROR in setting list of Prices to excel----",true);
-		}
-   
-	*/  
 	  Reporter.log("---------Search results Set to Excelsheet--------------", true);
 	  Reporter.log("---------Ending test-------------", true);
 	  

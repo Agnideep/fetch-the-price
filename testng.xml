@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
-  <test name="Default test(failed)">
+<suite name="Suite" parallel="false" >
+	
+  <test name="chrometest">
+  
+  	<parameter name="ip" value="localhost"/>
+  	<parameter name="browser" value="chrome"/>
+  	
     <classes>
       <class name="com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest">
         <methods>
@@ -12,4 +17,24 @@
       </class> 
     </classes>
   </test> 
+  
+  <!--  
+  
+  <test name="firefoxtest">
+  
+  	<parameter name="ip" value="localhost"/>
+  	<parameter name="browser" value="firefox"/>
+  	
+    <classes>
+      <class name="com.framework.fetchtheprice.fetch_the_price.FetchNameAndPriceTest">
+        <methods>
+          <include name="FetchNameAndPriceforIphone"/>
+          <include name="closeAPP"/>
+          <include name="openAPP"/>
+        </methods>
+      </class> 
+    </classes>
+  </test> 
+  -->
+  
 </suite> 

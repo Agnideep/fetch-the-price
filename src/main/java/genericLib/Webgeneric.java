@@ -11,6 +11,10 @@ import org.testng.Reporter;
 
 public class Webgeneric {
 	
+	/*
+	 * generic method for the project for providing implementation for ExplicitWait
+	 */
+	
 	public static void waitForVisibiltyAndClick(WebDriver driver,Long time, WebElement element) {
 		WebDriverWait wait=new WebDriverWait(driver, time);
 		try {

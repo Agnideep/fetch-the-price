@@ -81,7 +81,7 @@ public class Utility {
 	
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	/*
-	 * Method to write data into excel
+	 * Method to write data into excel in one single row
 	 */
 
 	
@@ -163,6 +163,10 @@ public class Utility {
 	}
 
 //////////////////////////////////////////////////////////////////////////////////////
+	/*
+	 * Unused Method to set data in excel. Code used for trials . contains errors
+	 */
+	
 	
 	public static void writeDataToXL(String filepath,String value ,int r ,int col)  {
 		
@@ -235,6 +239,16 @@ public class Utility {
 	
 //////////////////////////////////////////////////////////////////////////////////////////
 	
+	/*
+	 * Generic Method to set a batch of data into excel sheet
+	 * accepts five parameters> 
+	 * filepath
+	 * Value of the webElement
+	 * sheetname -"Sheet1"
+	 * row value
+	 * column value
+	 * 
+	 */
 	
 	public static void setXLData(String filepath,String value,String sheet, int RowNum, int ColNum) {
 		XSSFWorkbook w;
@@ -244,7 +258,7 @@ public class Utility {
 		
 		
         try {
-        	//File src=new File(filepath);
+        	
         	FileInputStream fis = new FileInputStream(filepath);
         	
         	//Workbook w= WorkbookFactory.create(new FileInputStream(new File(filepath)));
@@ -253,10 +267,11 @@ public class Utility {
         	
     		sh=w.getSheet(sheet);
     		
+    	for(int i=RowNum;i<=sh.getLastRowNum();i++) {
     		
-        	row=sh.getRow(RowNum);
+        	row=sh.getRow(i);
         	if(row==null) {
-                row = sh.createRow(RowNum);
+                row = sh.createRow(i);
         	}
         	
         	cell=row.getCell(ColNum);
@@ -265,10 +280,12 @@ public class Utility {
         	}
         	cell.setCellValue((String)value);
         	
-           
+    	}
             FileOutputStream fileOut = new FileOutputStream(filepath);
             w.write(fileOut);
+            
             //fileOut.flush();
+            
             fileOut.close();
             Reporter.log("----"+fileOut+"--successfull---");
         } catch (Exception e) {
