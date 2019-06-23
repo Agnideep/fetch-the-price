@@ -236,7 +236,7 @@ public class Utility {
 //////////////////////////////////////////////////////////////////////////////////////////
 	
 	
-	public static void setXLData(String filepath,String value, int RowNum, int ColNum) {
+	public static void setXLData(String filepath,String value,String sheet, int RowNum, int ColNum) {
 		XSSFWorkbook w;
 		XSSFSheet sh;
 		XSSFCell cell;
@@ -244,28 +244,36 @@ public class Utility {
 		
 		
         try {
-        	File src=new File(filepath);
-        	FileInputStream finput = new FileInputStream(src);
+        	//File src=new File(filepath);
+        	FileInputStream fis = new FileInputStream(filepath);
         	
         	//Workbook w= WorkbookFactory.create(new FileInputStream(new File(filepath)));
         	
-        	w= new XSSFWorkbook(finput);
+        	w= new XSSFWorkbook(fis);
         	
-    		sh=w.createSheet("data");
+    		sh=w.getSheet(sheet);
     		
     		
-        	row=sh.createRow(RowNum);
-        	cell=row.createCell(ColNum);
+        	row=sh.getRow(RowNum);
+        	if(row==null) {
+                row = sh.createRow(RowNum);
+        	}
+        	
+        	cell=row.getCell(ColNum);
+        	if(cell == null) {
+                cell = row.createCell(ColNum);
+        	}
         	cell.setCellValue((String)value);
         	
            
-            FileOutputStream fileOut = new FileOutputStream(src);
+            FileOutputStream fileOut = new FileOutputStream(filepath);
             w.write(fileOut);
             //fileOut.flush();
             fileOut.close();
             Reporter.log("----"+fileOut+"--successfull---");
         } catch (Exception e) {
         	Reporter.log("----------setdata FAILED----------------",true);
+        	
         }
     }
 	
